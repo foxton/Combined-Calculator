@@ -1,0 +1,12 @@
+========================================================================
+    CONSOLE APPLICATION : Combined calculator Project Changelog
+========================================================================
+
+V 0.0.1  Initial release
+
+
+	-Functional menu system with selection of desired calculation.
+	-Negative input will be inverted.
+	-Output with two decimal precision.
+
+	
