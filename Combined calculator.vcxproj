@@ -13,6 +13,10 @@
   <ItemGroup>
     <ClCompile Include="Combined.c" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Changelog.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{19E95528-738F-4FE6-A416-2B0554C63BC2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
