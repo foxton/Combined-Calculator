@@ -4,9 +4,17 @@
 
 V 0.0.1  Initial release
 
-
 	-Functional menu system with selection of desired calculation.
 	-Negative input will be inverted.
 	-Output with two decimal precision.
 
+V 0.0.5
+
+	-Program will now return to main menu after running
+	 desired program.
+
+V 0.0.6
+
+	-Removed "return 0" and "break" from default so that
+	 the program doesn't shut down on invalid input.
 	
