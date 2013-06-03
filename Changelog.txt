@@ -17,4 +17,7 @@ V 0.0.6
 
 	-Removed "return 0" and "break" from default so that
 	 the program doesn't shut down on invalid input.
-	
+
+V 0.0.7
+
+	-Inserted the "break" into the default case again.

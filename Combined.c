@@ -92,7 +92,8 @@ int main()
         break;
 
         default:
-            printf("Unvalid option. Enter a new number: \n");
+            printf("Unvalid option. Enter a new number. \n\n");
+			break;
 	}
 } while (selection != 4);
 }

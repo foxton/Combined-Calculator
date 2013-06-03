@@ -1,4 +1,4 @@
-﻿Build started 6/2/2013 7:31:21 PM.
+﻿Build started 6/3/2013 2:18:16 PM.
      1>Project "E:\Programming\C Projects\Combined calculator\Combined calculator.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Combined calculator.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -37,4 +37,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.38
+Time Elapsed 00:00:00.40
