@@ -1,99 +1,92 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
 int main()
 {
-	int selection;
-	float resistance, voltage, current;
-	printf("-----COMBINED CALCULATOR-----\n");
-	printf("A simple program for calculating voltage,\n");
-	printf("resistance and current in electric circuits.\n\n");
-	do
+    int selection;
+    float resistance, voltage, current;
+    cout << "-----COMBINED CALCULATOR-----\n";
+    cout << "A simple program for calculating voltage,\n";
+    cout << "resistance and current in electric circuits.\n\n";
+    do
     {
-	printf("--------MENU--------\n");
-	printf("1.Calculate Voltage\n");
-	printf("2.Calculate Resistance\n");
-	printf("3.Calculate Current\n");
-	printf("4.Exit\n");
-	printf("Selection:");
-	scanf("%d", &selection);
-	switch (selection)
-	{
-	case 1:
-
-		printf("\nEnter Resistance:");
-    scanf("%f", &resistance);
-	if (resistance < 0)
-	{
-		resistance = -resistance;
-	}
-	fflush(stdin);
-	printf("Enter Current:");
-    scanf("%f", &current);
-	if (current < 0)
+	cout << "--------MENU--------\n";
+    cout << "1.Calculate Voltage\n";
+	cout << "2.Calculate Resistance\n";
+	cout << "3.Calculate Current\n";
+	cout << "4.Exit\n";
+	cout << "Selection:";
+    cin >> selection;
+    switch (selection)
+    {
+    case 1:
+        cout << "\nEnter Resistance:";
+        cin >> resistance;
+        if (resistance < 0)
+        {
+            resistance = -resistance;
+        }
+        cout << "\nEnter Current:";
+        cin >> current;
+        if (current < 0)
 	{
 		current = -current;
 	}
-    fflush(stdin);
-    voltage = resistance * current;
-    printf("Voltage = %.2f", voltage);
-    printf("Volt\n");
-    printf("Press any key to return\n");
-	getchar();
-		break;
+	voltage = resistance * current;
+	cout << "Voltage =" << voltage;
+	cout << "Volt\n";
+	cout << "Press any key to return\n";
+	break;
 
 	case 2:
-
-		printf("\nEnter Voltage:");
-	scanf("%f", &voltage);
-	if(voltage < 0)
+        cout << "\nEnter Voltage:";
+        cin >> voltage;
+        if (voltage < 0)
+        {
+            voltage = -voltage;
+        }
+        cout << "\nEnter Current:";
+        cin >> current;
+        if (current < 0)
 	{
-	voltage = -voltage;
+		current = -current;
 	}
-	fflush(stdin);
-	printf("Enter Current:");
-	scanf("%f", &current);
-	if (current < 0)
-	{
-	current = -current;
-	}
-	fflush(stdin);
-
 	resistance = voltage / current;
-	printf("Resistance = %.2f", resistance);
-	printf("Ohm\n");
-	printf("Press any key to return\n");
-	getchar();
-		break;
-	case 3:
+	cout << "Resistance =" << resistance;
+	cout << "Ohm\n";
+	cout << "Press any key to return\n";
+	break;
 
-	printf("\nEnter voltage: ");
-    scanf("%f", &voltage);
-    fflush(stdin);
+    case 3:
+cout << "\nEnter voltage: ";
+    cin >> voltage;
 	if (voltage <0)   // Check if voltage is negative
 	{
 	voltage = -voltage; //If voltage is negative, change it to positive
 	}
-    printf("Enter resistance: ");
-    scanf("%f", &resistance);
-	if (resistance < 0)
-	{
-		resistance = -resistance; //If resistance is negative, change it to positive
-	}
-    fflush(stdin);
+    cout << "\nEnter Resistance:";
+        cin >> resistance;
+        if (resistance < 0)
+        {
+            resistance = -resistance;
+        }
+
      current = voltage / resistance;  //Calculate the total current
-     printf("Current = %.2f",current);
-     printf("Amp\n");
-     printf("Press any key to return\n");
-	 getchar();
+     cout << "Current =" << current;
+     cout << "Amp\n";
+     cout << ("Press any key to return\n");
 		break;
 
     case 4:
-        printf("Program shutting down");
+        cout << "Program shutting down";
         return 0;
         break;
 
-        default:
-            printf("Unvalid option. Enter a new number. \n\n");
-			break;
-	}
-} while (selection != 4);
+    default:
+        cout << "Invalid selection. Enter a new number.\n\n";
+
+    }
+}
+while (selection != 4);
 }
