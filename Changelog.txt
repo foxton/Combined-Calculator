@@ -21,3 +21,5 @@ V 0.0.6
 V 0.0.7
 
 	-Inserted the "break" into the default case again.
+
+V 0.1	Rewrote the program in C++.
