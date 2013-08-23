@@ -4,7 +4,7 @@
 
 A simple program for calculating Voltage, current and resistance.
 
-program language: C
+program language: C++
 Programmer: foxton
 
 
